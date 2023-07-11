@@ -1,0 +1,38 @@
+.elements {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap-reverse;
+}
+
+.card {
+    border: 2px solid red;
+}
+.nav1 {
+    background-color: coral; 
+    padding: 10px;
+
+    display: flex;
+    
+    flex-direction: row;
+    /*align-items: baseline; /*eje principal*/
+    justify-content: space-around;
+    /*gap: 28px; /*separacion entre items*/
+}
+.nav1 > a {
+    border: 1px solid rgb(102, 0, 255);
+}
+
+.nav2 {
+    background-color: burlywood; 
+    padding: 10px;
+    height: 100px;
+
+    display: flex;
+    flex-direction:  row; 
+
+    align-items: row;
+    justify-content: space-around; /*eje cruzado - alinear columna*/
+}
+.nav2{
+    border: 3px solid green;
+}
