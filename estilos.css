@@ -12,6 +12,13 @@
     padding: 10px;
 
     display: flex;
+
+    /*flex-grow: 1 ; cuanto espacio adicional deben tomar los elementos cuando hay espacio disponible 
+    flex-shrink: 0 ; cuanto espacio deben encoger los elementos
+    flex-basis: 200px ; tamaño inicial de los elementos antes de que se distribuyan los espacios restantes
+    Es lo mismo que el de abajo. */
+
+    flex: 1 0 200px; /*ejemplo usado en el carrusel*/
     
     flex-direction: row;
     /*align-items: baseline; /*eje principal*/
@@ -22,17 +29,33 @@
     border: 1px solid rgb(102, 0, 255);
 }
 
+#promo {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    order: 1;
+}
+
+
+#element1 {
+    order: 3;
+}
+
+#element3 {
+    order: 4;
+}
+
 .nav2 {
     background-color: burlywood; 
     padding: 10px;
     height: 100px;
 
     display: flex;
-    flex-direction:  row; 
+    /*flex-direction:  row;*/
 
     align-items: row;
     justify-content: space-around; /*eje cruzado - alinear columna*/
 }
-.nav2{
+.nav2 > a {
     border: 3px solid green;
 }
