@@ -1,61 +1,103 @@
-.elements {
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap-reverse;
+#Título{padding:20px;
+    text-shadow: 2px 2px 3px ;
+        font-family:'mexicana';
+}
+@font-face {
+ font-family: 'mexicana';
+src: url(../imagenes/Berkshire_Swash/BerkshireSwash-Regular.ttf);       
 }
 
-.card {
-    border: 2px solid red;
+header{background-color: #eef2f3;
+font-family: monospace;}
+
+nav{
+    margin: 0 px;
+    background: #281e00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b5af0f5f, #281e0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b5af0f5f, #281e00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: monospace; 
 }
-.nav1 {
-    background-color: coral; 
+
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
     padding: 10px;
-
+    text-align: center;
+  }
+  
+  /* Estilos específicos para la página de inicio */
+  .hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-
-    /*flex-grow: 1 ; cuanto espacio adicional deben tomar los elementos cuando hay espacio disponible 
-    flex-shrink: 0 ; cuanto espacio deben encoger los elementos
-    flex-basis: 200px ; tamaño inicial de los elementos antes de que se distribuyan los espacios restantes
-    Es lo mismo que el de abajo. */
-
-    flex: 1 0 200px; /*ejemplo usado en el carrusel*/
-    
-    flex-direction: row;
-    /*align-items: baseline; /*eje principal*/
-    justify-content: space-around;
-    /*gap: 28px; /*separacion entre items*/
-}
-.nav1 > a {
-    border: 1px solid rgb(102, 0, 255);
-}
-
-#promo {
-    background-color: black;
-    color: aliceblue;
-    padding: 5px;
-    order: 1;
-}
-
-
-#element1 {
-    order: 3;
-}
-
-#element3 {
-    order: 4;
-}
-
-.nav2 {
-    background-color: burlywood; 
-    padding: 10px;
-    height: 100px;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Estilos específicos para la página de destinos */
+  .destinations {
     display: flex;
-    /*flex-direction:  row;*/
-
-    align-items: row;
-    justify-content: space-around; /*eje cruzado - alinear columna*/
-}
-.nav2 > a {
-    border: 3px solid green;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .destination-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .destination-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
